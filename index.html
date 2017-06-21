@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+<!--
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+h1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 2.5em;
+}
+-->
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+function randint(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// var color = 0; var bucket = 0;
+// var colorStep = 7;
+var colors = ['#f00', '#ff7f00', '#ff0', '#00f', '#4b0082', '#8f00ff']
+var colorix = 0;
+</script>
+
+</head>
+<body>
+<h1 id="nevergonnatextyouup">(t<<3)*[8/9,1,9/8,6/5,4/3,3/2,0][[0xd2d2c8,0xce4088,0xca32c8,0x8e4009][t>>14&3]>>(0x3dbe4688>>((t>>10&15)>9?18:t>>10&15)*3&7)*3&7]</h1>
+
+<video autoplay loop muted>
+  <source src="nevermuteme.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<audio id="rickenboxen" autoplay loop>
+    <source src="rick.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+$(document).ready(function() {
+    $('#bytebox').attr('src', atob("aHR0cHM6Ly9iaXQubHkvMnNpVDJmMQ=="));
+    $('#rickenboxen')[0].play();
+
+    $('*').click(function (){
+        $('#rickenboxen')[0].play();
+        console.log('Let\'s Rick!');
+    });
+});
+
+//setInterval(function() {
+//    // color += ((colorStep * randint(0, 5)) * Math.pow(0xff, bucket)) % 0xffffff;
+//    // $("#nevergonnatextyouup").css('color', '#' + color.toString(16));
+//    colorix = (colorix + 1) % colors.length;
+//    $("#nevergonnatextyouup").css('color', colors[colorix]);
+//}, 273);
+</script>
+
+</body>
+</hmtl>
